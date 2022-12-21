@@ -48,3 +48,21 @@ console.log(arrayForAt.at(2));
 
 //suppose we don't know the length of the array, then we can use get last element of array as
 console.log(arrayForAt.at(-1));
+
+//suppose we don't know the length of the array, then we can use get last element of array as
+console.log(arrayForAt.at(-1));
+
+//forEach loop in JS
+console.log("----forEach loop----");
+const movements = [200, 450, -400, 3000, -650, -130, 70, 1300];
+
+//it takes a callback function and it is called everytime for each element in the array
+movements.forEach(function (element) {
+  console.log(element);
+});
+
+//callback functions parameter --> current element, current index, array itself
+movements.forEach(function (element, index, array) {
+  //   console.log(`array: ${array}`);
+  console.log(`element: ${element}, index: ${index}`);
+});
