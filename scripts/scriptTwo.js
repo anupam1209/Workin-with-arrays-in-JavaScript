@@ -131,3 +131,20 @@ const checkDogs = function (dogsJulia, dogsKate) {
 };
 
 checkDogs([3, 5, 2, 12, 7], [4, 1, 15, 8, 3]);
+
+//DATA TRANSFORMATION
+console.log("------DATA Transformation-----");
+const randomArray = [1, 2, 3, 5, 6];
+const mapRandomArray = randomArray.map((x) => x * 2);
+console.log(mapRandomArray);
+
+const filterRandomArray = randomArray.filter((x) => x > 2);
+console.log(filterRandomArray);
+
+const initialValue = 0;
+const reduceRandomArray = randomArray.reduce(
+  (accumulator, currentValue) => accumulator + currentValue,
+  initialValue
+);
+
+console.log(reduceRandomArray);
