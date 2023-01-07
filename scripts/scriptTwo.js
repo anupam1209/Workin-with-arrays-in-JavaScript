@@ -148,3 +148,22 @@ const reduceRandomArray = randomArray.reduce(
 );
 
 console.log(reduceRandomArray);
+
+//the map Method
+console.log("------the map Method-----");
+
+const euroToUSD = 1.1;
+//going through the map method --------> FUNCTIONAL PROGRAMMING
+const movementsUSD = movements.map((mov) => {
+  return mov * euroToUSD;
+});
+
+console.log(movementsUSD);
+
+//secondly, we can go through the forEach method as well -------> SIMPLE APPROACH
+const movementsUSDfor = [];
+for (const item of movements) {
+  movementsUSDfor.push(item * euroToUSD);
+}
+
+console.log(movementsUSDfor);
