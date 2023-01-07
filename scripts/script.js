@@ -94,3 +94,18 @@ const displayMovements = function (movements, sort = false) {
     containerMovements.insertAdjacentHTML("afterbegin", html);
   });
 };
+
+//this function is used for computing the usernames
+const createUserNames = function (accs) {
+  accs.forEach(function (acc) {
+    acc.username = acc.owner
+      .split(" ")
+      .map(function (name) {
+        return name[0];
+      })
+      .join("");
+  });
+};
+
+createUserNames(accounts);
+console.log(accounts);
